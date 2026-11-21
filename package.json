@@ -1,0 +1,20 @@
+{
+  "name": "saucedemo-reqres-qa-suite",
+  "version": "1.0.0",
+  "description": "Junior QA Tester Assignment: Manual Test Plan, Bug Reports, Playwright UI & ReqRes API Automation",
+  "scripts": {
+    "postinstall": "playwright install chromium",
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "test:api": "playwright test tests/api",
+    "report": "playwright show-report",
+    "capture-bugs": "node scripts/capture-bug-screenshots.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6"
+  },
+  "dependencies": {
+    "playwright": "^1.65.1"
+  }
+}
